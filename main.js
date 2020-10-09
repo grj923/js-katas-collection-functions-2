@@ -29,11 +29,11 @@ console.log("Power/Exponation");
 // Power Exponation
 
 function power(x, n) {
-  count = 0;
-  powerTotal = 0;
-  while (count < n) {
-    powerTotal = multiply(x, n);
-    count++;
+  index = 0;
+  powerTotal = 1;
+  while (index < n) {
+    powerTotal = multiply(powerTotal, x);
+    index++;
   }
   return powerTotal;
 }
@@ -41,4 +41,4 @@ function power(x, n) {
 console.log(add(2, 2));
 console.log(multiply(5, 5));
 console.log(multiply(10, 10));
-console.log(power(5, 2));
+console.log(power(4, 2));
